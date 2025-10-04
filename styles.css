@@ -1,2 +1,25 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+/* Example for distinguishing items */
+.item:nth-child(1) {
+    background: #e53935;
+}
+.item:nth-child(2) {
+    background: #1e56e7;
+}
+.item:nth-child(3), .item:nth-child(n+4) {
+    background: #418831;
+}
